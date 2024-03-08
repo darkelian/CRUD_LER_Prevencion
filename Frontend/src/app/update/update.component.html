@@ -1,0 +1,41 @@
+<h1>CRUD LER Prevención - Actualizar Datos</h1>
+<app-alert [message]="message"></app-alert>
+<div class="container">
+    <div class="row">
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="Primer Nombre">
+                    Primer Nombre <span class="obli">*</span>
+                </label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="primerNombreHelp"
+                    formControlName="firstName" placeholder="First Name" placeholder="Ingrese cédula">
+            </div>
+            <div class="form-group">
+                <label for="segundoNombre">Segundo Nombre</label>
+                <input type="text" class="form-control" id="segundoNombre" aria-describedby="segundoNombreHelp"
+                    placeholder="Ingrese el segundo nombre" formControlName="middleName" placeholder="Middle Name">
+            </div>
+
+            <div class="form-group">
+                <label for="primerApellido">Primer Apellido <span class="obli">*</span></label>
+                <input type="text" class="form-control" id="primerApellido" aria-describedby="primerApellidoHelp"
+                    placeholder="Ingrese el primer apellido" formControlName="lastName" placeholder="Last Name">
+            </div>
+
+            <div class="form-group">
+                <label for="segundoApellido">Segundo Apellido </label>
+                <input type="text" class="form-control" id="segundoApellido" aria-describedby="segundoApellidoHelp"
+                    placeholder="Ingrese el segundo apellido" formControlName="secondLastName"
+                    placeholder="Second Last Name">
+            </div>
+            <div class="form-group">
+                <label for="segundoApellido">Fecha de nacimiento <span class="obli">*</span> </label>
+                <input type="date" class="form-control" id="fecha" aria-describedby="fechaHelp"
+                    placeholder="Ingrese fecha" formControlName="birthDate">
+            </div>
+            <button type="submit" class="btn btn-primary">Actualizar</button>
+            <button type="button" routerLink="/list" class="btn btn-secondary buttons-crud">Volver</button>
+        </form>
+    </div>
+</div>
+<app-footer></app-footer>

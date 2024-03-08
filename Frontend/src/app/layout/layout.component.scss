@@ -1,0 +1,49 @@
+button {
+    margin: 5px;
+}
+
+.icon-table {
+    display: flex;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: beige;
+    }
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+th,
+p,
+.i {
+    text-align: center;
+    vertical-align: middle;
+}
+.input-group-text{
+    margin: 0px 20px;
+}
+.buttons-crud {
+    width: 180px;
+    margin: 0px 20px;
+    border-radius: 15px !important;
+}
+
+.img-search {
+    width: 15px;
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+    margin: 25px;
+}
+.input-search{
+    width: 200px;
+    max-width: 200px;
+}

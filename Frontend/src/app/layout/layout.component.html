@@ -1,0 +1,52 @@
+<app-alert [message]="message"></app-alert>
+<div class="container">
+    <div class="row">
+        <h1>CRUD LER Prevención</h1>
+        <div class="input-group rounded header">
+            <input type="search" #searchBox class="form-control rounded input-search" placeholder="Search" aria-label="Search"
+                aria-describedby="search-addon" (input)="onSearch(searchBox.value)"/>
+            <span class="input-group-text border-0" id="search-addon">
+                <img class="img-search" src="../../assets/Img/search-alt-1-svgrepo-com.svg" alt="buscar">
+            </span>
+            <button type="button" routerLink="/register" class="btn btn-success buttons-crud">Registrar</button>
+        </div>
+        <table *ngIf="data" class="table table-striped">
+            <thead>
+                <tr class="table-info">
+                    <th scope="col">Cédula</th>
+                    <th scope="col">Primer nombre</th>
+                    <th scope="col">Segundo nombre</th>
+                    <th scope="col">Primer Apellido</th>
+                    <th scope="col">Segundo Apellido</th>
+                    <th scope="col">
+                        <div class="icons">
+                            Fecha de nacimiento
+                            <div>
+                                <img (click)="dateUpdate(true)" class="icon-table"
+                                    src="../../assets/Img/up-chevron-svgrepo-com.svg" alt="">
+                                <img (click)="dateUpdate(false)" class="icon-table"
+                                    src="../../assets/Img/down-chevron-svgrepo-com.svg" alt="">
+                            </div>
+                        </div>
+                    </th>
+                    <th scope="col" colspan="2">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of data.data">
+                    <td>{{item.cedula}}</td>
+                    <td>{{item.primerNombre}}</td>
+                    <td>{{item.segundoNombre}}</td>
+                    <td>{{item.primerApellido}}</td>
+                    <td>{{item.segundoApellido}}</td>
+                    <td>{{item.fechaNacimiento}}</td>
+                    <td colspan="2">
+                        <button type="button" class="btn btn-primary" (click)="navigateToUpdate(item.cedula)">Editar</button>
+                        <button type="button" class="btn btn-danger" (click)="dateDelete(item.cedula)">Eliminar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<app-footer></app-footer>
