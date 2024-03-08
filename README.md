@@ -1,5 +1,5 @@
 # CRUD LER Prevención
-<p align="center"><img src="https://www.webdevelopersnotes.com/wp-content/uploads/create-a-simple-home-page.png"/></p> 
+<p align="center"><img src="https://github.com/darkelian/CRUD_LER_Prevencion/blob/main/Frontend/src/assets/GitImg/image.png"/></p> 
 Presentación de un CRUD para la prueba tecnica para el puesto de Desarrollador Fullstack, el aplicativo esta hecho con una arquitectura de 3 capas, es decir Modelo, Vista, Controlador.
 
 Postgresql como modelo.
@@ -57,3 +57,8 @@ Ejecuta `./mvnw clean install` para compilar y empaquetar la aplicación, omitie
 ### Documentación APIS Swagger
 
 Puedes acceder a la documentación en `http://localhost:8090/swagger-ui/index.html#/` una vez que el servidor esté en ejecución.
+<p align="center"><img src="https://github.com/darkelian/CRUD_LER_Prevencion/blob/main/Frontend/src/assets/GitImg/image2.png"/></p>
+
+## Otras vistas
+<p align="center"><img src="https://github.com/darkelian/CRUD_LER_Prevencion/blob/main/Frontend/src/assets/GitImg/image3.png"/></p>
+<p align="center"><img src="https://github.com/darkelian/CRUD_LER_Prevencion/blob/main/Frontend/src/assets/GitImg/image4.png"/></p>
